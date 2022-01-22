@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    background-color: grey;
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+  
+.sketchbox {
+    width: 24rem;
+    height: 24rem;
+    display: grid;
+}
+
+.pixel {
+      background-color: white;
+      border: 1px solid black;
+}
+
+.pixel .hover {
+    background-color: red;
+}
+
