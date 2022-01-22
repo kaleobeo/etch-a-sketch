@@ -19,4 +19,7 @@ function newGrid(size) {
     }
 }
 
-
+document.querySelectorAll('.pixel').forEach((box) => {
+    
+    box.addEventListener("mouseover", () => box.classList.add('hover'))
+});
