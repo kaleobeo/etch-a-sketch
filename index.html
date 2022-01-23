@@ -11,11 +11,12 @@
 <body>
 
     <div class="settings">
-        
+        <button onclick="mode = 'normal'">normal</button>
+        <button onclick="mode = 'random'">random</button>
     </div>
 
     <div class="outer">
-        <button onclick="newGrid(prompt('What size grid would you like?', '16'))">New Grid</button>
+        <button id="gridButton" onclick="newGrid(prompt('What size grid would you like?', '16'))">New Grid</button>
         <div class="sketchbox"></div>
     </div>
 </body>
