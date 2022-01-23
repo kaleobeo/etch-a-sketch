@@ -11,7 +11,12 @@ newGrid(16)
 function newGrid(size) {
 
     sketchBox.innerHTML = ""
-    sideLength = size
+    let sideLength
+    if (size > 100) {
+        sideLength = 100
+    } else {
+        sideLength = size
+    }
     sketchBox.style.gridTemplateColumns = (`repeat( ${sideLength}, 1fr)`)
 
     for (let i = 0; i < (sideLength**2); i++) {
@@ -19,7 +24,6 @@ function newGrid(size) {
     }
 }
 
-document.querySelectorAll('.pixel').forEach((box) => {
-    
-    box.addEventListener("mouseover", () => box.classList.add('hover'))
-});
+sketchBox.addEventListener('mouseover', (e) => e.target.classList.add('hover'))
+
+
