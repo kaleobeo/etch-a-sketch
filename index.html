@@ -9,15 +9,17 @@
     <script src = "index.js" defer></script>
 </head>
 <body>
-
+    <div class ="grid">
     <div class="settings">
+        <button onClick="newGrid(prompt('What size would you like your grid to be?', '16'))">New Grid</button>
         <button onclick="mode = 'normal'">normal</button>
         <button onclick="mode = 'random'">random</button>
     </div>
 
     <div class="outer">
-        <button id="gridButton" onclick="newGrid(prompt('What size grid would you like?', '16'))">New Grid</button>
         <div class="sketchbox"></div>
+    </div>
+    <div></div>
     </div>
 </body>
 </html>
