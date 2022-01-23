@@ -32,7 +32,7 @@ function newGrid(size) {
 
 sketchBox.addEventListener('mouseover', (e) => {
     if (mode === "normal") {
-        e.target.classList.add('hover')
+        e.target.style.backgroundColor = "red"
     } else if (mode === "random") e.target.style.backgroundColor = `${randomRGB()}`
 });
 
